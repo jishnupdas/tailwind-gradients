@@ -1,5 +1,5 @@
 import React from "react";
-import { getRandomItem } from "../gradientCard/utils";
+import { getRandomItem } from "../utils";
 import RandomIcon from "./RandomIcon";
 
 const SelectionMenu = ({ title, items, setItem }) => {

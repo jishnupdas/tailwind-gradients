@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 import GradientCard from "../components/gradientCard/GradientCard";
 import Head from "next/head";
-import { colorCombos } from "../components/gradientCard/options";
-import { getRandomItem } from "../components/gradientCard/utils";
-import quotes from "../data/quotes";
-import { themes } from "../components/gradientCard/themes";
 import RandomIcon from "../components/UIElements/RandomIcon";
 import SelectionMenu from "../components/UIElements/SelectionMenu";
+import { colorCombos } from "../components/gradientCard/options";
+import { getRandomItem } from "../components/utils";
+import quotes from "../data/quotes";
+import { themes } from "../components/gradientCard/themes";
 
 const Home = () => {
   const [theme, setTheme] = useState(getRandomItem(Object.keys(themes)));

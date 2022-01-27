@@ -1,5 +1,5 @@
 import React from "react";
-import { getRandomItem } from "./utils";
+import { getRandomItem } from "../utils";
 import { gradientChoices } from "./options";
 
 const GradientCard = ({ text, colorsArray, theme }) => {
@@ -14,15 +14,15 @@ const GradientCard = ({ text, colorsArray, theme }) => {
           ></span>
         </div>
       </div>
-      <GradientBkg colors={colorsArray} theme={theme} />
+      <GradientBkg colors={colorsArray} blendMode={theme} />
     </div>
   );
 };
 
 export default GradientCard;
 
-const GradientBkg = ({ colors, theme, layers = 2 }) => {
-  const gradientlayers = Array.apply(0, Array(layers)).map(function (x, i) {
+const GradientBkg = ({ colors, blendMode, layers = 2 }) => {
+  const gradientlayers = Array.apply(0, Array(layers)).map(() => {
     // let midColor = getRandomItem(colors);
     return {
       gradient: getRandomItem(gradientChoices),
@@ -33,14 +33,12 @@ const GradientBkg = ({ colors, theme, layers = 2 }) => {
     };
   });
 
-  console.log(gradientlayers);
-
   return (
     <>
       {gradientlayers.map(({ gradient, from, via, to }, index) => (
         <div
           key={index}
-          className={`absolute top-0 right-0 h-full w-full ${theme} ${gradient} ${from} ${via} ${to}`}
+          className={`absolute top-0 right-0 h-full w-full ${blendMode} ${gradient} ${from} ${via} ${to}`}
         ></div>
       ))}
     </>
