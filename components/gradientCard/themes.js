@@ -1,0 +1,22 @@
+export const themes = {
+  pastel: "opacity-80 mix-blend-exclusion brightness-125",
+  muted: "opacity-80 mix-blend-exclusion brightness-90 saturate-150",
+  pastely: "opacity-40 mix-blend-difference contrast-150 brightness-200",
+  "light pastel": "mix-blend-lighten brightness-200 saturate-50",
+  faded: "opacity-50 mix-blend-color-dodge brightness-100 contrast-75",
+  "dark moody": "mix-blend-soft-light",
+  "dark saturated": "opacity-60 mix-blend-color brightness-150 contrast-110",
+  darker: "mix-blend-hue contrast-150 brightness-200",
+  pop: "opacity-60 mix-blend-color-dodge brightness-100 saturate-80",
+  whacky: "opacity-60 mix-blend-color-dodge brightness-100 hue-rotate-30",
+  natural: "opacity-90 mix-blend-screen brightness-50 saturate-150",
+  vibrant: "opacity-90 mix-blend-hard-light brightness-150 contrast-125",
+  "aurora dark": "mix-blend-difference contrast-150 brightness-200",
+  "neon night": "mix-blend-difference contrast-150 brightness-200 saturate-75",
+  "soft light": "mix-blend-soft-light contrast-150 brightness-200 saturate-75",
+  "washed out": "mix-blend-lighten saturate-50 opacity-50",
+  bright:
+    "mix-blend-lighten contrast-200 brightness-200 saturate-25 opacity-80",
+  colorful: "mix-blend-normal saturate-125 contrast-125 opacity-30",
+  "deep space": "mix-blend-multiply brightness-200 contrast-75 saturate-175",
+};
