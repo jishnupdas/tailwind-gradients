@@ -17,7 +17,7 @@ const Home = () => {
   return (
     <main className="relative">
       {/* <nav className="fixed top-0 z-20 flex flex-row justify-between w-full px-8 pt-4 pb-8 space-x-8 shadow-lg bg-slate-700"> */}
-      <nav className="fixed top-0 z-20 grid w-full gap-8 px-8 pt-4 pb-8 shadow-lg bg-slate-700 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-12">
+      <nav className="z-20 grid w-full gap-8 px-8 pt-4 pb-8 shadow-lg bg-slate-700 md:fixed md:top-0 md:grid-cols-3 lg:grid-cols-4 lg:gap-x-12">
         <SelectionMenu
           title={`themes (${theme})`}
           items={Object.keys(themes)}
