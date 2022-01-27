@@ -5,9 +5,9 @@ import { gradientChoices } from "./options";
 const GradientCard = ({ text, colorsArray, theme }) => {
   return (
     <div className="relative grid w-full overflow-hidden place-items-center">
-      <div className="z-10 grid w-full h-full p-12 place-items-center backdrop-blur-2xl lg:px-16 lg:py-24 2xl:px-24 2xl:py-32">
+      <div className="z-10 grid w-full h-full p-12 place-items-center backdrop-blur-2xl lg:px-16 lg:py-24">
         {/* backdrop-blur-5xl */}
-        <div className="z-10 grid max-w-2xl px-8 py-6 shadow-2xl place-items-center rounded-xl bg-slate-900/30 shadow-slate-900/30 brightness-100 2xl:px-12 2xl:py-10">
+        <div className="z-10 grid max-w-2xl px-8 py-6 shadow-2xl place-items-center rounded-xl bg-slate-900/30 shadow-slate-900/30 brightness-100 2xl:px-10 2xl:py-8">
           <span
             className="font-mono text-xl font-bold text-white 2xl:text-2xl"
             dangerouslySetInnerHTML={{ __html: text }}
