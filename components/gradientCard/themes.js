@@ -6,7 +6,7 @@ export const themes = {
   faded: "opacity-50 mix-blend-color-dodge brightness-100 contrast-75",
   "dark moody": "mix-blend-soft-light",
   "dark saturated": "opacity-60 mix-blend-color brightness-150 contrast-110",
-  darker: "mix-blend-hue contrast-150 brightness-200",
+  darker: "mix-blend-hue brightness-200 saturate-125 opacity-50",
   pop: "opacity-60 mix-blend-color-dodge brightness-100 saturate-80",
   whacky: "opacity-60 mix-blend-color-dodge brightness-100 hue-rotate-30",
   natural: "opacity-90 mix-blend-screen brightness-50 saturate-150",
