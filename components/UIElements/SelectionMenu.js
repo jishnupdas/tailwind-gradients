@@ -7,7 +7,7 @@ const SelectionMenu = ({ title, items, setItem }) => {
     <div className="w-full">
       <div className="flex items-center pb-4 space-x-4">
         <button
-          className="px-6 py-2 text-xl shadow-xl bg-slate-400"
+          className="px-6 py-2 text-xl shadow-xl bg-slate-400 hover:bg-slate-200"
           onClick={() => {
             setItem(getRandomItem(items));
           }}
