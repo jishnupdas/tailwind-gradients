@@ -10,6 +10,7 @@ import quotes from "../data/quotes";
 import { themes } from "../components/gradientCard/themes";
 
 const Home = () => {
+  let layerOptions = [1, 2, 3, 4];
   const [theme, setTheme] = useState(getRandomItem(Object.keys(themes)));
   const [layers, setLayers] = useState(2);
   const [colors, setColors] = useState(getRandomItem(Object.keys(colorCombos)));
@@ -25,7 +26,7 @@ const Home = () => {
         />
         <SelectionMenu
           title={"layers"}
-          items={[1, 2, 3, 4, 5, 6]}
+          items={layerOptions}
           setItem={setLayers}
         />
         <SelectionMenu
@@ -37,7 +38,7 @@ const Home = () => {
           className="flex items-center justify-center px-6 py-2 text-xl rounded-lg shadow-xl bg-slate-100 hover:bg-slate-200"
           onClick={() => {
             setTheme(getRandomItem(Object.keys(themes)));
-            setLayers(getRandomItem([1, 2, 3, 4, 5, 6]));
+            // setLayers(getRandomItem(layerOptions));
             setColors(getRandomItem(Object.keys(colorCombos)));
           }}
         >
@@ -60,11 +61,9 @@ const Home = () => {
           href="https://github.com/jishnupdas/tailwind-gradients"
           className="mx-auto text-sm text-white"
         >
-          https://github.com/jishnupdas/tailwind-gradients git repo
+          https://github.com/jishnupdas/tailwind-gradients
         </a>
-        <p className="py-4 text-sm text-gray-400">
-          Please consider contributing, feel free to fork and PR
-        </p>
+        <p className="py-4 text-sm text-gray-400">feel free to fork and PR</p>
       </footer>
     </main>
   );
