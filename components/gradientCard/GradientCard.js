@@ -73,7 +73,7 @@ const GradientBkg = ({ blendMode, gradientlayers }) => {
 
 const CodeBlock = ({ blendMode, gradientlayers }) => {
   return `
-<div class="relative w-full h-72 overflow-hidden grid place-items-center">
+<div class="relative grid w-full h-full overflow-hidden bg-gray-800 place-items-center">
   <div class="z-10 w-full h-full p-12 backdrop-blur-5xl">
     <!-- your content here -->
   </div>
