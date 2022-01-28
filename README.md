@@ -22,6 +22,6 @@ https://tailwind-gradients.vercel.app/
 
 ### Todo
 
-- add more layers
-- click to copy the component code
+- [ ] add more layers
+- [x] click to copy the component code
 - ...
